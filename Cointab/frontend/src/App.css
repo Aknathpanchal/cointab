@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  align-content: center;
+  align-items: center;
+  margin-top: 12%;
+}
+.App > button {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: black;
+  padding: 1% 2%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.filterdiv {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}

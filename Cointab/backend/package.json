@@ -1,0 +1,23 @@
+{
+  "name": "cointab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-paginate": "^1.0.2",
+    "mysql": "^2.18.1",
+    "mysql-insert-multiple": "^1.0.4",
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20"
+  }
+}
