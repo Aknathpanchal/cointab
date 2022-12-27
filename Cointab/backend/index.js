@@ -70,28 +70,28 @@ app.get("/search/:key", (req, res) => {
   );
 });
 
-app.use(paginate.middleware(10, 50));
+// app.use(paginate.middleware(10, 50));
 
-app.get("/get", (req, res) => {
-  const limit = req.query.limit || 10;
-  const offset = req.offset;
-  console.log(limit);
-  services
-    .findRecords({
-      offset: offset,
-      limit: limit,
-    })
-    .then((results) => {
-      const pageCount = Math.ceil(results.count / limit);
-      console.log(pageCount);
+// app.get("/get", (req, res) => {
+//   const limit = req.query.limit || 10;
+//   const offset = req.offset;
+//   console.log(limit);
+//   services
+//     .findRecords({
+//       offset: offset,
+//       limit: limit,
+//     })
+//     .then((results) => {
+//       const pageCount = Math.ceil(results.count / limit);
+//       console.log(pageCount);
 
-      res.status(200).send({
-        message: true,
-        data: results,
-        pageCount,
-      });
-    });
-});
+//       res.status(200).send({
+//         message: true,
+//         data: results,
+//         pageCount,
+//       });
+//     });
+// });
 
 app.delete("/delete", (req, res) => {
   connection.query("DELETE FROM cointab", function (err, result, fields) {
