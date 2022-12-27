@@ -10,7 +10,7 @@ app.use(cors());
 const connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "Aknath@123",
+  password: "",
   database: "cointab",
 });
 
