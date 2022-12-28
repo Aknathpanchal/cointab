@@ -16,6 +16,7 @@ const User = () => {
       .get(`http://localhost:8080/get`)
       .then((res) => {
         setdata(res.data.data);
+        // console.log(res.data.data.length);
       })
       .catch((e) => console.log(e));
   };
@@ -25,8 +26,10 @@ const User = () => {
       .get(`http://localhost:8080/search/${e.target.value}`)
       .then((res) => {
         setdata(res.data.data);
+        console.log(res.data.data.length);
         if (e.target.value == "Filter by Gender") {
           getDataFunction();
+
         }
       })
       .catch((e) => console.log(e));
